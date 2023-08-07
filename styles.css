@@ -1,0 +1,204 @@
+﻿/*All Website*/
+body {
+    background-color: #E6DACE;
+    font-family: Rockwell;
+    font-size: 1.05rem;
+}
+
+/*Header Container*/
+.marginHeader {
+    margin-bottom: 195px;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 5px;
+    border-style: solid;
+    border-color: gray;
+    box-sizing: border-box; /* Include borders in the width */
+    background-color: white;
+    z-index: 1; /* Set a z-index to ensure this container stays above other elements */
+}
+
+.headerContainer {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.headerContainer img {
+    margin: 0 10px;
+}
+
+.menuContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menuContainer ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 0;
+}
+.menuContainer button {
+    background-color: transparent;
+    border: none;
+}
+.menuItems li button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: inherit;
+    text-decoration: none;
+    padding: 0;
+    margin: 0 40px; /* Horizontal spacing, top and bottom margins remain unaffected */
+    font-weight: bold;
+    font-family: Rockwell;
+    transition: color 0.3s ease, font-weight 0.3s ease; /* Hover effect */
+}
+.menuItems li button:hover {
+    color: #0050ff; /* Change text color to blue on hover */
+}
+
+/*Container*/
+.mainContainer {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    width: 95%;
+    margin-bottom: 25px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.thirtyContainer, .fourtyContainer, .fiftyContainer, .sixtyContainer, .seventyContainer {
+    display: flex;
+    padding: 20px;
+    border-style: solid;
+    border-color: gray;
+    box-sizing: border-box;
+    font-size: 1.3rem;
+}
+
+.thirtyContainer {
+    flex-basis: 30%;
+    background-color: #CDAA7D;
+}
+
+.fourtyContainer {
+    flex-basis: 40%;
+    background-color: #CDAA7D;
+    font-size: 1.5rem;
+}
+
+.fiftyContainer {
+    flex-basis: 50%;
+    background-color: #F4ECE6;
+    font-size: 1.1rem;
+}
+
+.sixtyContainer {
+    flex-basis: 60%;
+    background-color: white;
+}
+
+.seventyContainer {
+    flex-basis: 70%;
+    background-color: white;
+}
+
+.hunredContainer {
+    display: flex;
+    flex-basis: 100%;
+    width: 85%;
+    margin-bottom: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: solid;
+    border-color: gray;
+    background-color: lightgray;
+    font-size: 1.3rem;
+}
+
+/*Text Modifier*/
+.textAlignLeft {
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    word-wrap: break-word;
+}
+
+.textAlignCenter {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+/*Image & Animation*/
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+#hamIcon {
+    display: none;
+}
+
+.rotate-icon {
+    transition: transform 0.3s ease;
+}
+.rotate-icon.rotated {
+    transform: rotate(-90deg);
+}
+
+.hidden {
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: height 0.5s ease, opacity 0.5s ease;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 800px) {
+    /* (Tablet/Mobile 800px) */
+    .headerContainer {
+        justify-content: center;
+    }
+
+    .mainContainer {
+        flex-direction: column;
+        width: 95%;
+    }
+
+    #hamIcon {
+        display: inline-block;
+    }
+    .menuItems li button {
+        display: none;
+    }
+
+    .menuContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .menuItems.active {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .menuItems.active li {
+        margin: 5px 0; /* Add some spacing between the buttons */
+    }
+    .menuItems.active li button {
+        display: block; /* Display the buttons as block elements to take full width */
+    }
+}

@@ -1,11 +1,203 @@
 ﻿<!DOCTYPE html>
 
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMX Bike</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <p>Hi</p>
+    <!--HEADER-->
+    <div class="marginHeader"></div>
+    <div class="header">
+        <div class="headerContainer">
+            <img src="images/wheel.png" alt="Wheel Drawing" width="75">
+            <h1>BMX Bicycle</h1>
+        </div>
+        <nav class="menuContainer">
+            <button id="hamIcon" class="rotate-icon"><img src="images/hamburger_icon.png" alt="Hamburger Icon" width="50"></button>
+            <ul class="menuItems">
+                <li><button id="page1btn">History</button></li>
+                <li><button id="page2btn">Tricks</button></li>
+                <li><button id="page3btn">Locations</button></li>
+            </ul>
+        </nav>
+    </div>
+    <!-- Page 1 -->
+    <div id="page1" class="page">
+        <!-- MAIN CONTAINER -->
+        <div class="mainContainer">
+            <!-- Left Content Here -->
+            <div class="thirtyContainer textAlignCenter">
+                <img src="images/bmx_drawing.png" alt="Profile Picture" width="400">
+            </div>
+            <!-- Right Content Here -->
+            <div class="seventyContainer textAlignLeft">
+                <h2>History of BMX</h2>
+                <p>
+                    BMX (Bicycle Motocross) is a type of off-road bicycle racing that originated in the late 1960s in Southern California. It was initially inspired by motocross racing, 
+                    with participants using modified bicycles to emulate the style and excitement of motocross.
+                </p>
+            </div>
+        </div>
+        <!-- SECOND CONTAINER -->
+        <div class="mainContainer">
+            <!-- Left Content Here -->
+            <div class="fiftyContainer textAlignLeft">
+                <p><b>Evolution and Disciplines</b></p>
+                <p>
+                    The sport quickly gained popularity and evolved into various disciplines, including racing, freestyle, and street riding. In the early days, riders used Schwinn Sting-Ray 
+                    bicycles and began to modify them for better performance on dirt tracks and jumps.
+                </p>
+            </div>
+            <!-- Right Content Here -->
+            <div class="fiftyContainer textAlignLeft">
+                <p><b>Rise of Organized Racing</b></p>
+                <p>
+                    BMX racing became an organized sport with the establishment of tracks, official rules, and competitions. Over the years, the sport has grown to include diverse styles 
+                    and disciplines, each with its own unique challenges and techniques.
+                </p>
+            </div>
+        </div>
+        <!-- THIRD CONTAINER -->
+        <div class="mainContainer">
+            <!-- Left Content Here -->
+            <div class="fiftyContainer textAlignLeft">
+                <p><b>Global Phenomenon</b></p>
+                <p>Today, BMX is a global phenomenon with a rich history and a vibrant community of riders who continue to push the boundaries of what is possible on two wheels.</p>
+            </div>
+            <!-- Right Content Here -->
+            <div class="fiftyContainer textAlignLeft">
+                <p><b>Enduring Legacy</b></p>
+                <p>The legacy of BMX continues to inspire new generations of riders and enthusiasts, serving as a testament to the enduring spirit of adventure and creativity on wheels.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page 2 -->
+    <div id="page2" class="page">
+        <!-- FIRST CONTAINER -->
+        <div class="mainContainer">
+            <!-- Left Content Here -->
+            <div class="thirtyContainer textAlignCenter">
+                <img class="tricksImage" id="tricksImage1" src="images/bunnyhop.png" alt="BMX Bunnyhop" width="500">
+            </div>
+            <!-- Right Content Here -->
+            <div class="seventyContainer textAlignLeft">
+                <p><b>Bunny Hop</b></p>
+                <p class="tricksTextContainer hidden" id="trickTextContainer1">
+                    The Bunny Hop is one of the fundamental tricks in BMX riding. It involves lifting both the front and rear wheels of the bike off the ground simultaneously.
+                    To perform a Bunny Hop, start by bending your knees and crouching low on the bike. Quickly pull up on the handlebars while pushing your feet down on the pedals.
+                    As the bike comes off the ground, tuck your knees towards your chest to achieve maximum height. Level the bike out by extending your legs and then land both wheels back on the ground.
+                </p>
+            </div>
+        </div>
+        <!-- SECOND CONTAINER -->
+        <div class="mainContainer">
+            <!-- Left Content Here -->
+            <div class="seventyContainer textAlignLeft">
+                <p><b>Manual</b></p>
+                <p class="tricksTextContainer hidden" id="trickTextContainer2">
+                    A Manual is a trick where you balance on the rear wheel of the bike while rolling. Start by riding at a moderate speed. Shift your weight towards the rear of
+                    the bike while gently pulling up on the handlebars. Keep your arms straight and your body centered over the rear wheel. Use small adjustments to maintain your
+                    balance as you roll on the rear wheel. To exit the manual, shift your weight forward and gently lower the front wheel back to the ground.
+                </p>
+            </div>
+            <!-- Right Content Here -->
+            <div class="thirtyContainer textAlignCenter">
+                <img class="tricksImage" id="tricksImage2" src="images/manual.png" alt="BMX Manual" width="500">
+            </div>
+        </div>
+        <!-- THIRD CONTAINER -->
+        <div class="mainContainer">
+            <!-- Left Content Here -->
+            <div class="thirtyContainer textAlignCenter">
+                <img class="tricksImage" id="tricksImage3" src="images/tailwhip.png" alt="BMX Tailwhip" width="500">
+            </div>
+            <!-- Right Content Here -->
+            <div class="seventyContainer textAlignLeft">
+                <p><b>Tailwhip</b></p>
+                <p class="tricksTextContainer hidden" id="trickTextContainer3">
+                    The Tailwhip is an advanced trick that involves spinning the frame of the bike around while in the air. Begin by gaining some air off a ramp
+                    or jump. As you leave the ground, kick the back end of the bike with your lead foot and let go of the handlebars. Simultaneously, kick the bike
+                    frame around 360 degrees with your legs. As the frame completes the rotation, catch the handlebars with your hands and land back on the pedals.
+                </p>
+            </div>
+        </div>
+        <!-- FOURTH CONTAINER -->
+        <div class="mainContainer">
+            <!-- Left Content Here -->
+            <div class="seventyContainer textAlignLeft">
+                <p><b>360° Spin</b></p>
+                <p class="tricksTextContainer hidden" id="trickTextContainer4">
+                    The 360° Spin is a trick where you perform a full rotation in the air while keeping the bike beneath you. Approach a ramp or jump with enough speed to gain air.
+                    As you leave the lip, use your shoulders and arms to initiate the spin. Turn your head and shoulders in the direction of the spin and use your arms to guide the
+                    bike around. Keep your eyes on the landing and complete the 360-degree rotation before landing smoothly.
+                </p>
+            </div>
+            <!-- Right Content Here -->
+            <div class="thirtyContainer textAlignCenter">
+                <img class="tricksImage" id="tricksImage4"  src="images/360spin.png" alt="BMX 360 Spin" width="500">
+            </div>
+        </div>
+        <!-- FIFTH CONTAINER -->
+        <div class="mainContainer">
+            <!-- Left Content Here -->
+            <div class="thirtyContainer textAlignCenter">
+                <img class="tricksImage" id="tricksImage5"  src="images/grind.png" alt="BMX Grind" width="500">
+            </div>
+            <!-- Right Content Here -->
+            <div class="seventyContainer textAlignLeft">
+                <p><b>Grind</b></p>
+                <p class="tricksTextContainer hidden" id="trickTextContainer5">
+                    Grinding is a trick where you slide along a rail or ledge with the bike's pegs or tires. Approach the rail or ledge at an angle. As you reach the edge,
+                    ollie (lift both wheels off the ground) and position the pegs or tires on the rail. Maintain your balance by shifting your weight and using your arms for 
+                    stability. As you approach the end of the rail, ollie off to clear the obstacle and land smoothly.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page 3 -->
+    <div id="page3" class="page">
+        <!-- FIRST CONTAINER -->
+        <div class="hunredContainer textAlignCenter">
+            <h4>Location To Do Tricks</h4>
+        </div>
+        <!-- SECOND CONTAINER -->
+        <div class="mainContainer">
+            <!-- Left Content Here -->
+            <div class="fourtyContainer textAlignCenter">
+                <p><b>East Coast Park Skatepark</b></p>
+                <img src="images/ecp_skatepark.png" alt="East Coast Park Skatepark" width="700">
+            </div>
+            <!-- Right Content Here -->
+            <div class="sixtyContainer textAlignLeft">
+                <p>
+                    The East Coast Park Skate Park is a popular destination for BMX riders in Singapore. This skate park features a variety of ramps, rails, and obstacles suitable for BMX tricks 
+                    and stunts. The park's layout caters to both beginner and advanced riders, making it a great place for riders of all skill levels to practice their tricks. With its scenic 
+                    location along the coast, riders can enjoy the sea breeze while honing their skills.
+                </p>
+            </div>
+        </div>
+        <!-- THIRD CONTAINER -->
+        <div class="mainContainer">
+            <!-- Left Content Here -->
+            <div class="fourtyContainer textAlignCenter">
+                <p><b>Jurong East Skatepark</b></p>
+                <img src="images/je_skatepark.png" alt="Jurong East Skatepark" width="700">
+            </div>
+            <!-- Right Content Here -->
+            <div class="sixtyContainer textAlignLeft">
+                <p>
+                    Located in the western part of Singapore, the Jurong East Skate Park is another favorite spot for BMX enthusiasts. The skate park offers a range of features including 
+                    quarter pipes, ramps, and ledges that are perfect for performing tricks. The park's design promotes creativity and skill development, making it a hotspot for 
+                    riders to learn new tricks and showcase their abilities. Its central location within Jurong East makes it easily accessible to riders from various parts of the city.
+                </p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
